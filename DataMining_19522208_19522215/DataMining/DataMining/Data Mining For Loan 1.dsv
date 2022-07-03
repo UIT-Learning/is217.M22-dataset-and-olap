@@ -1,0 +1,104 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="01e0753d-72f0-454e-b899-bdb04281643a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Mining For Loan 1</ID>
+  <Name>Data Mining For Loan 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Data Mining For Loan 1</DataSourceID>
+  <Schema>
+    <xs:schema id="Data_x0020_Mining_x0020_For_x0020_Loan_x0020_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Data_x0020_Mining_x0020_For_x0020_Loan_x0020_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="7d82b4eb-c18d-4989-a554-b4c0d7817424">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Data_Loan" msprop:design-time-name="4d54bc36-3697-4c03-adf0-8d9559587178" msprop:DbTableName="Data_Loan" msprop:FriendlyName="Data_Loan" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msprop:design-time-name="c4e7fc46-f9c5-4138-997d-34f88c006119" msprop:DbColumnName="ID" msprop:FriendlyName="ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="age" msprop:design-time-name="1a79ec1f-95df-4116-9cc6-84ebe6f1a23b" msprop:DbColumnName="age" msprop:FriendlyName="age" type="xs:double" minOccurs="0" />
+                  <xs:element name="job" msprop:design-time-name="8a5e46db-dab6-41d6-9ca5-ebece6e903dc" msprop:DbColumnName="job" msprop:FriendlyName="job" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="marital" msprop:design-time-name="b5342f4e-1590-40bc-8f98-1ff64ab97fb8" msprop:DbColumnName="marital" msprop:FriendlyName="marital" type="xs:double" minOccurs="0" />
+                  <xs:element name="education" msprop:design-time-name="770baa1c-5189-4d7b-80ff-f4153f2fc66b" msprop:DbColumnName="education" msprop:FriendlyName="education" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="default" msprop:design-time-name="d4257734-5b50-41bf-8148-1485be9cdde9" msprop:DbColumnName="default" msprop:FriendlyName="default" type="xs:int" minOccurs="0" />
+                  <xs:element name="balance" msprop:design-time-name="ee593ca3-4eb9-4109-b977-6872c90275f0" msprop:DbColumnName="balance" msprop:FriendlyName="balance" type="xs:double" minOccurs="0" />
+                  <xs:element name="housing" msprop:design-time-name="52c64bff-a6e6-4530-a3e3-eb1c30b00e0d" msprop:DbColumnName="housing" msprop:FriendlyName="housing" type="xs:int" minOccurs="0" />
+                  <xs:element name="loan" msprop:design-time-name="ca80e1bd-6238-46fb-9077-fc788ea31d1b" msprop:DbColumnName="loan" msprop:FriendlyName="loan" type="xs:int" minOccurs="0" />
+                  <xs:element name="day" msprop:design-time-name="1f3f5362-38da-4c5d-a7d4-b61da9b6cea4" msprop:DbColumnName="day" msprop:FriendlyName="day" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:design-time-name="8291f43a-fdc6-44a9-be4c-1ab79eb921f5" msprop:DbColumnName="month" msprop:FriendlyName="month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="duration" msprop:design-time-name="3d15117c-3d7a-4622-ba9a-c2bdb68f661b" msprop:DbColumnName="duration" msprop:FriendlyName="duration" type="xs:double" minOccurs="0" />
+                  <xs:element name="campaign" msprop:design-time-name="0b325c7d-fdd6-4234-82e7-47f6af75de03" msprop:DbColumnName="campaign" msprop:FriendlyName="campaign" type="xs:int" minOccurs="0" />
+                  <xs:element name="pdays" msprop:design-time-name="c50f925d-718c-4a3b-a1a9-0dcc70638643" msprop:DbColumnName="pdays" msprop:FriendlyName="pdays" type="xs:int" minOccurs="0" />
+                  <xs:element name="previous" msprop:design-time-name="b943e8b1-d61d-40a1-8aa6-ea93b7955248" msprop:DbColumnName="previous" msprop:FriendlyName="previous" type="xs:int" minOccurs="0" />
+                  <xs:element name="term_deposit" msprop:design-time-name="2ce3ba12-d536-41e6-911d-1fc983b46ddf" msprop:DbColumnName="term_deposit" msprop:FriendlyName="term_deposit" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data_Loan" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Data_x0020_Mining_x0020_For_x0020_Loan_x0020_1 xmlns="" />
+  </Schema>
+</DataSourceView>

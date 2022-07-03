@@ -1,0 +1,210 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="54a46085-7d3b-4b44-b943-009ca07bb824" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Ukraine Airspace</ID>
+  <Name>Fact Ukraine Airspace</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Fact_Ukraine_Airspace</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4e8d1942-ac8c-448c-adea-c91277c33242">
+    <DataSourceViewID>Uf</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cb375de3-e12c-4345-9a9d-9d326b785cff">
+      <ID>Barometic Altitude</ID>
+      <Name>Barometic Altitude</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="50902a57-9272-4312-ab80-55dc7bcd4aeb">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4977700a-6a5c-4b45-ab84-7f86f7eb2cf8">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>barometic_altitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="123108ec-97dc-4568-81eb-8ac7667c1423">
+      <ID>Geo Altitude</ID>
+      <Name>Geo Altitude</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae84db17-7619-4b03-8615-c7ec80939326">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe5ad56e-1ef7-4355-ad08-3f806f635d41">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>geo_altitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="108e83d4-81c0-4e7c-8400-cc8419cd5c27">
+      <ID>Id Date Time</ID>
+      <Name>Id Date Time</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c9a074e-726e-436a-9fa9-08c4b5d017c5">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="555d057b-0440-4534-b161-a8d520390b39">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_date_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="17c9d422-9e21-40d5-9c23-9ed8c148ba7e">
+      <ID>Id Fact</ID>
+      <Name>Id Fact</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d92864a7-cc66-402d-81bc-438bd1af6eb0">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3e7a7f8-a011-49a7-a5c5-b66dba50c647">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_fact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="042ae246-cbbc-458e-89dd-649ee8e1c10a">
+      <ID>Spi</ID>
+      <Name>Spi</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66aed628-7660-478e-95bd-47a29ede9b2b">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37e4bc86-a354-46e9-865e-a039fcaa6c34">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>spi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bc554d39-5ac0-40b0-8096-aaef5aede9c3">
+      <ID>Squawk</ID>
+      <Name>Squawk</Name>
+      <Type>Long</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f07e53e-b0e5-486b-a278-11d99760bff3">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66cb9596-b106-4252-9e6a-31f539876f29">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>squawk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="42df5a07-f0bf-43e5-991e-22b38bc75d3d">
+      <ID>Fact Ukraine Airspace</ID>
+      <Name>Fact Ukraine Airspace</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="326421fe-ae54-42c7-b7fb-646ed436891b">
+          <ID>Barometic Altitude</ID>
+          <Name>Barometic Altitude</Name>
+          <SourceColumnID>Barometic Altitude</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="46dfd8d6-b27d-4921-beda-f6e62bfd7a97">
+          <ID>Geo Altitude</ID>
+          <Name>Geo Altitude</Name>
+          <SourceColumnID>Geo Altitude</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0bed52a1-f1fc-4b70-a059-4158c3746521">
+          <ID>Id Date Time</ID>
+          <Name>Id Date Time</Name>
+          <SourceColumnID>Id Date Time</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b6eaddee-a982-4414-be37-9f9137c55a94">
+          <ID>Id Fact</ID>
+          <Name>Id Fact</Name>
+          <SourceColumnID>Id Fact</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="5277f7a4-8bf9-4b11-aa29-7b25432b35d1">
+          <ID>Spi</ID>
+          <Name>Spi</Name>
+          <SourceColumnID>Spi</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0945fdd2-adb4-4c93-8d2f-53e5aae33b85">
+          <ID>Squawk</ID>
+          <Name>Squawk</Name>
+          <SourceColumnID>Squawk</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+  <ddl100_100:HoldoutMaxCases>10000</ddl100_100:HoldoutMaxCases>
+</MiningStructure>
