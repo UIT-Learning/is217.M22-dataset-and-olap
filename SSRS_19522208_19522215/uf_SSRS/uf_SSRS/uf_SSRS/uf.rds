@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="uf">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=THANGNH\SSAS;Initial Catalog=uf</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>b248d5b5-5527-4542-94d8-22f4dfc930ad</DataSourceID>
+</RptDataSource>

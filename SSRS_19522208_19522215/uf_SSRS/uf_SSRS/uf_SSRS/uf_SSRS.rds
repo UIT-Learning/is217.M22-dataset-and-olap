@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="uf_SSRS">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=THANGNH;Initial Catalog=uf</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>1e9468ad-4aac-4268-ac09-538a9f3c4091</DataSourceID>
+</RptDataSource>
