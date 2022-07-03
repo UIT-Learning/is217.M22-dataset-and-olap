@@ -1,0 +1,301 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fd22397d-7b72-46fc-a4d5-2a155f54dfca" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Ukraine Airspace</ID>
+  <Name>Fact Ukraine Airspace</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1991" scrolltop="-2751" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7557" y="10329" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Ukraine_Airspace" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3535" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf0d0000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Ukraine_Airspace" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1991</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2751</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f46621f6-7ed0-4c08-bf03-ca1e882fc5eb">
+    <DataSourceViewID>Uf</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ef58fe6a-45ff-4c5b-ad8e-0034430ad0f0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="25964bee-0ac3-4930-aade-81a1adc5fdc4">
+      <ID>Id Fact</ID>
+      <Name>Id Fact</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5947e26c-4b06-40bd-b7b4-ca818e599613">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85a6026d-9f61-44bd-a484-b6fc55169bd4">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_fact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5e2ee625-7a58-4fda-bcc9-766eda716ad8">
+          <AttributeID>Id Date Time</AttributeID>
+          <Name>Id Date Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3601ee95-7c69-463a-8fcc-7eb2753012c8">
+          <AttributeID>Id Country</AttributeID>
+          <Name>Id Country</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e60da1ab-efea-4782-89d3-9ee5c5c27273">
+          <AttributeID>Id Location</AttributeID>
+          <Name>Id Location</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a557504-26b3-4b97-8dd7-bac348a3bfa1">
+          <AttributeID>Id Plane</AttributeID>
+          <Name>Id Plane</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0747634e-e68f-4da8-968d-f28a21d460f0">
+          <AttributeID>Barometic Altitude</AttributeID>
+          <Name>Barometic Altitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="711146f7-9698-4707-83b4-5cd9ed11a05c">
+          <AttributeID>Sensors</AttributeID>
+          <Name>Sensors</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d5090af-1ed5-47b0-a325-36e35110fe59">
+          <AttributeID>Geo Altitude</AttributeID>
+          <Name>Geo Altitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="629c51db-eb90-4432-a478-88d61be91816">
+          <AttributeID>Squawk</AttributeID>
+          <Name>Squawk</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6661fc1-31c9-45b9-9917-34a36117969b">
+          <AttributeID>Spi</AttributeID>
+          <Name>Spi</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="44ed0826-2047-49c5-b640-b9ed99d7f802">
+          <AttributeID>Position Source</AttributeID>
+          <Name>Position Source</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="966b202d-a101-4c25-b5a0-c0fb5bd0b005">
+      <ID>Id Date Time</ID>
+      <Name>Id Date Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3bfef89d-372f-4fa4-a66a-7d5f899d58ea">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3f2dee8-018a-409a-9920-f9f708b7adbf">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_date_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53b216e2-423e-46be-b256-a1bae2249456">
+      <ID>Id Country</ID>
+      <Name>Id Country</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cfb3cd80-caa1-41c5-81c7-0e9c089737c0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba502301-d90a-4237-9696-ab0529d55de9">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_country</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbbde4fd-0a4f-47f1-84f1-b09b4bc3a5ce">
+      <ID>Id Location</ID>
+      <Name>Id Location</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1e76c1a-aaf6-4d25-ba63-6c48ea7a1d28">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c725650d-7b56-4368-b508-466e22948958">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bef6b1a4-2a4a-4cb9-b5e4-5d66baf1b83d">
+      <ID>Id Plane</ID>
+      <Name>Id Plane</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="709fa702-97a3-4b86-afa6-34905bb63786">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb80c8c6-4816-4374-9365-b7e8eb0d48a6">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>id_plane</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f41df718-8c12-4a7a-96ba-52454a158842">
+      <ID>Barometic Altitude</ID>
+      <Name>Barometic Altitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dae40f10-e98c-4b26-b14a-78ed780bf8fe">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f50f71fa-f8ea-49ea-b134-2da29957b298">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>barometic_altitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3e40e764-3583-42d2-82cc-7cd76a224703">
+      <ID>Sensors</ID>
+      <Name>Sensors</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5d5a1d3-cc33-469d-a28a-51c8156dfa7b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7da3fa72-bc2e-4b43-b0f3-8086c87173f9">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>sensors</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9e307000-6342-464b-9e72-0d9b05844341">
+      <ID>Geo Altitude</ID>
+      <Name>Geo Altitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81569656-5584-4d9e-b391-053020904625">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d81dd25-6683-4e74-ae8a-007ded358df8">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>geo_altitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e4f6529-d4e1-44d8-ab89-b6f86026859a">
+      <ID>Squawk</ID>
+      <Name>Squawk</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c7ea4d5d-4520-4ae1-a0f3-eaf882301a68">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e48824a-b2aa-4a3c-874c-c00a98b9396e">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>squawk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f667d6c1-6db4-4094-9e43-6acee4f38517">
+      <ID>Spi</ID>
+      <Name>Spi</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="401b2474-aacc-40f0-a24e-d26d0073228d">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee61fc53-3d50-494b-9705-691c1676455b">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>spi</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="633e98a5-5f9a-4f72-8c56-8b1534f58753">
+      <ID>Position Source</ID>
+      <Name>Position Source</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b46a415b-b55a-4fe0-9d56-bfc0aba673cf">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e132a66-ba7b-4ccd-96f3-ea2a7b771ee8">
+            <TableID>dbo_Fact_Ukraine_Airspace</TableID>
+            <ColumnID>position_source</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

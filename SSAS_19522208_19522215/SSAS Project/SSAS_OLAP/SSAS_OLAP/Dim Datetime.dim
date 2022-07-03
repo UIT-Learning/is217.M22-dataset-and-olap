@@ -1,0 +1,980 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ff773801-6f89-45a8-b3b2-e754516fca3a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Datetime</ID>
+  <Name>Dim Datetime</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-971" scrolltop="-1472" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="130" x="7557" y="10329" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_datetime" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3831" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f70e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_datetime" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-971</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1472</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>130</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="3" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="173">
+            <Shape Id="Id Date Time" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Date Time" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Time Position" />
+              </Attributes>
+              <Position x="241" y="20" />
+            </Shape>
+            <Shape Id="Sec Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sec Time Position" />
+              </Attributes>
+              <Position x="462" y="20" />
+            </Shape>
+            <Shape Id="Min Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Min Time Position" />
+              </Attributes>
+              <Position x="683" y="20" />
+            </Shape>
+            <Shape Id="Hour Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Hour Time Position" />
+              </Attributes>
+              <Position x="905" y="20" />
+            </Shape>
+            <Shape Id="Day Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Day Time Position" />
+              </Attributes>
+              <Position x="1126" y="20" />
+            </Shape>
+            <Shape Id="Month Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Month Time Position" />
+              </Attributes>
+              <Position x="1347" y="20" />
+            </Shape>
+            <Shape Id="Year Time Position" Expanded="false">
+              <Attributes>
+                <Attribute Id="Year Time Position" />
+              </Attributes>
+              <Position x="1568" y="20" />
+            </Shape>
+            <Shape Id="Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Last Contact" />
+              </Attributes>
+              <Position x="241" y="69" />
+            </Shape>
+            <Shape Id="Sec Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sec Last Contact" />
+              </Attributes>
+              <Position x="462" y="69" />
+            </Shape>
+            <Shape Id="Min Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Min Last Contact" />
+              </Attributes>
+              <Position x="683" y="69" />
+            </Shape>
+            <Shape Id="Hour Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Hour Last Contact" />
+              </Attributes>
+              <Position x="905" y="69" />
+            </Shape>
+            <Shape Id="Day Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Day Last Contact" />
+              </Attributes>
+              <Position x="1126" y="69" />
+            </Shape>
+            <Shape Id="Month Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Month Last Contact" />
+              </Attributes>
+              <Position x="1347" y="69" />
+            </Shape>
+            <Shape Id="Year Last Contact" Expanded="false">
+              <Attributes>
+                <Attribute Id="Year Last Contact" />
+              </Attributes>
+              <Position x="1568" y="69" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d7162ef0-2465-47fc-9f2a-dade2a4b1316">
+    <DataSourceViewID>Uf</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3375b951-9a79-4926-930c-c9303e2efea9">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="39849022-fc13-4c7a-97d0-88fb8ec35384">
+      <ID>Id Date Time</ID>
+      <Name>Id Date Time</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2bb31264-9767-4582-877f-aa319c3aeb19">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16d2b326-9222-465b-9527-3fd381ee6414">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>id_date_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="99417c89-28f9-4db1-bb6a-676068672653">
+          <AttributeID>Last Contact</AttributeID>
+          <Name>Last Contact</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3c88b0cf-7441-4cf4-88ca-94189aa1761a">
+          <AttributeID>Time Position</AttributeID>
+          <Name>Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c4936d08-dfe5-4ed1-9dd7-0c304efae5cb">
+      <ID>Day Time Position</ID>
+      <Name>Day Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2b3b2ea-f0d5-442b-a435-2aee95379c8f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22c9e7e1-27b8-4c32-9f94-fdfdd0bf9c45">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1dc7bc90-c41b-4b05-a1fa-d28754741518">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32404e2e-2b5f-4955-a506-ff426e3ac2e4">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="eac19b47-5d16-452b-b7fe-e1c8335c009b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f29181d0-7d0f-4530-ad29-2dcf5d67d07b">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b6b561fb-b192-4026-ad22-3879fc1223e0">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="658cc249-2077-4617-955c-ddae97fffcd4">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>day_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ba43cc8a-84f4-4e54-bfee-443dd707a44d">
+          <AttributeID>Month Time Position</AttributeID>
+          <Name>Month Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="70bb2a90-23b7-4baf-9c6f-5c42bae64f10">
+      <ID>Month Time Position</ID>
+      <Name>Month Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0b1e916-3e50-4f3f-bbde-3bc22f19b763">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c645ec8-657f-4909-97c7-f04fdb9b9dd4">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f688271c-6e86-409f-92b7-0a9a55af3d2c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e9fad03-3523-48ce-966f-3be5d583a62e">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7a8e1224-7980-4966-a96f-e70487f37dad">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e7f9e956-a7d6-4d1c-ab0b-539168072c52">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>month_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d6f69fbf-d21c-4024-9935-45752e97b81b">
+          <AttributeID>Year Time Position</AttributeID>
+          <Name>Year Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3636b217-d1b4-49a1-8e41-c47dd6a9bc44">
+      <ID>Year Time Position</ID>
+      <Name>Year Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ee17d6e-e83b-473f-96ca-abb43afb1f0a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb7edd58-e4b9-45c6-a2da-b3ae5c9d20b3">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="36b5247d-2883-4b02-8dfa-499c696f7e1a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6add7f97-4a4d-435d-abd4-120f854e106e">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>year_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c4f8763-59d4-4c53-88e3-ccfb5f945f44">
+      <ID>Day Last Contact</ID>
+      <Name>Day Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ef27252-9801-4de4-a0fa-e6055e68c422">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a6007a6-628d-41ac-98c4-c652d09c2efd">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="64206635-a338-483a-a67f-2984e212f8fb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d20b0a2-0b46-42a6-abf2-0c3526ef6081">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5760c693-649c-4239-a2ce-53ef4fc57ffb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6facfe4-c929-482e-94d7-d7fed27e8413">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9211a026-bdfb-45a5-9cf6-d0c76addb4e1">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e7e66002-3cf1-4663-a0f9-b3189be2b2f4">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>day_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="71b68411-4c6d-42a3-b692-712558d819e4">
+          <AttributeID>Month Last Contact</AttributeID>
+          <Name>Month Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a91b3c81-5ffd-47f0-8a91-7a33280f96f5">
+      <ID>Month Last Contact</ID>
+      <Name>Month Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52e5694d-c919-41c9-b104-1b5849da609f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="adc31fbd-0a79-4758-834a-bbd83e13f746">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8512a2c7-11da-4829-bc44-6ed8f9d85c34">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ae28b97-bc1e-4079-9974-97c8d84b2072">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bf28521b-6917-4479-8789-b3743f503646">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b04bd09-a576-4f93-a194-72920ed8d9ff">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>month_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3b4ef8f1-91e0-4f50-bcb3-cb6bfe097347">
+          <AttributeID>Year Last Contact</AttributeID>
+          <Name>Year Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ffc6d7da-1560-45cf-bfd8-f06b5fe20439">
+      <ID>Year Last Contact</ID>
+      <Name>Year Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4409b9e3-c2e1-47a3-9a64-4a8236fce718">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c268ce19-f229-442d-867f-7b3a866ef618">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9bf43b0a-3374-443c-b078-ca19f1231f49">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fbfe603e-f5f9-4ec8-a092-0faf6ad996e9">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>year_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="264014de-567e-4062-a8b5-6dde2f866a6d">
+      <ID>Hour Time Position</ID>
+      <Name>Hour Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="337fc2c7-45e7-4d51-9c3d-59a85323b9c5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b39edc3-73b5-497f-9175-109da2d4dfb4">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="36a7bea3-e24e-484d-8a58-2db8c9b9b1d4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="380719a2-edd7-402b-8a6c-1a7ae859123c">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="254d345a-49b7-4c33-a299-45482f66d706">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13c7c00d-e0a1-4397-bb7f-d28e0af062ca">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a4c659ee-50a2-4a8f-98c9-c6546691732e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab254606-600a-406e-8ab8-fcba48c17974">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="65cb24d5-77ba-4891-9a37-9feabefe0557">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="91d949ca-388b-4611-b574-2f00a6bde8e4">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>hour_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5cb9e481-20c4-4008-9f31-f9476b92898c">
+          <AttributeID>Day Time Position</AttributeID>
+          <Name>Day Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8afd47a-c552-4894-b7db-38068b73699a">
+      <ID>Min Time Position</ID>
+      <Name>Min Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af9cc65e-517c-4964-850d-44ed7904e168">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbbd7ccc-ae21-487d-89fa-7eb8da1f207c">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="db243233-f55c-44a8-ae97-6d0405db5579">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c1c5b83-0b94-4eab-a27a-5949cf430ab8">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7f6cf7e5-0928-4da3-8b88-ce52c9755822">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="934b2800-3b75-483e-a194-a5e5679851c2">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="06936e42-d991-4cb2-a46f-d3c2cf01439a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e738252-f2cf-4502-8e02-1dc0a250f457">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="906d458f-a165-45a2-8023-68547dd3d57e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55bcd66a-8df1-43c6-b732-5c21d473307a">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f07fe9e6-5d7e-4f9b-ad97-6cd025e776d6">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="91bd7b10-8a19-472a-a146-51c0017f5d5a">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>min_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e7c5979a-9ccd-4096-a527-50b1b651a872">
+          <AttributeID>Hour Time Position</AttributeID>
+          <Name>Hour Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="994f8397-1919-42cf-88e7-0c8cea3e3fc5">
+      <ID>Sec Time Position</ID>
+      <Name>Sec Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35916ceb-6f4c-4aaf-8829-accb35ac95da">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf31e1a8-eb2b-4a1f-aaee-eb19157cef54">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>sec_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0b149471-89db-4121-9801-78f7dbebe232">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5eba49ab-0b16-44cf-b045-290bb3ffd36b">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ca6ce7ba-f545-47e1-a408-83891720109c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d2c4def-2ef3-49c8-8383-d4fc3a40bbae">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="566eef2d-71df-43c1-b482-200f519815bd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65576bdb-c7a8-4d9d-90b9-9bef921485fa">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4cce9da7-39f4-4a8e-abaf-a2cf21158646">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88ed66c9-76da-4b73-8871-2b32a881960d">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b2190264-1722-41e0-a801-086e580107f5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc6f858a-1c65-45ec-acd9-254d44b48ebe">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d4fe150a-c7c2-4c57-a876-4ba258468229">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="07dab7cf-e5e6-42dc-b046-b335c51efe12">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>sec_time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3b4badbe-aa88-468f-98c2-3ff89818fe97">
+          <AttributeID>Min Time Position</AttributeID>
+          <Name>Min Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c08f2d70-95c9-4060-a231-bd6ebadb9826">
+      <ID>Hour Last Contact</ID>
+      <Name>Hour Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad095f34-90c1-4e54-baf5-f7314daeef81">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26f1fb88-580e-48ba-9747-ba5592aed8fe">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="32bdd6e6-8feb-4520-8ae1-965305a2ed57">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa96065c-c084-47d6-b7cc-25f75e6b8dd6">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="680f742f-b5e3-4307-bf08-79501b75c8cf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dfeeba7d-6c4c-4c75-87c2-2becb6bec5b4">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="de91f259-bed5-4f02-afef-282d9a3716cc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31418311-d425-4c15-bd64-ef142b801e9d">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6a7d0506-7034-4200-bddf-b4f90983a385">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="076192c1-2473-4b89-9148-a54df3a888b6">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>hour_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1a3a30a7-470c-40d2-bc72-469f487bad60">
+          <AttributeID>Day Last Contact</AttributeID>
+          <Name>Day Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b41d4409-bf9d-4bed-88ce-fe4e116a9a6f">
+      <ID>Min Last Contact</ID>
+      <Name>Min Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9522896a-abd7-4c86-b782-780f8afb55fd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b11b9ac-2c20-4e64-9433-f9800da339d1">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="89f41016-1662-414e-bd14-54a6f0011786">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="150967b6-15c4-4812-8165-d2abb112419c">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1a6814ec-cd2d-4042-87bb-760f546bf3ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d017d44f-1e3f-4198-ab17-9b916f87be0b">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2b0e985b-4295-4e24-a44a-71ff04339793">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="08b0ddb9-411c-4dc2-a383-528e43563343">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3c898842-4f0d-478e-b1c4-b4b306744990">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a20f01e-61d3-482c-aed8-e7b1b54c43f3">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3ac0a109-2902-4a77-a2ef-ba412deedb9b">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="487f88ed-e21f-45cb-9721-ff50e6132888">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>min_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ff6ae956-1582-4e45-9dce-5e20144be395">
+          <AttributeID>Hour Last Contact</AttributeID>
+          <Name>Hour Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e020c9a0-de63-4939-a36c-e0db69f597da">
+      <ID>Sec Last Contact</ID>
+      <Name>Sec Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8576574-1098-47cf-9c49-7a735718d0dc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00d89048-b29d-4361-9a4d-c5d770dfbdd2">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>sec_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f24c8de7-c848-44cc-9524-a76f11b76301">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="479c7ad8-34bb-4151-b1c1-a349d1deef94">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0e0911d6-dc69-4d7c-9e6b-8f162312ee13">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1ce4631-360a-4004-b7ed-67f01ef955ec">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a1784860-2b73-47c6-abc4-f2a6bcc7c5f5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="216f3885-afe2-4549-9f7c-2778c907084f">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="aac1a742-eb68-488f-9f65-e8073c30970f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58e14e4a-65b2-4654-9701-22522968d444">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ddc59e99-8257-43f7-a2a6-01af7777164a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e026b12-d68b-4a8f-8765-0c4e27e88785">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2f575ff8-ae93-4573-9d01-508e9ed35b39">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d28fa3fe-78d6-4c5e-af3c-b8e4f7b1d7b1">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>sec_last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="54d881af-3de6-4edc-b472-85cad2b96e68">
+          <AttributeID>Min Last Contact</AttributeID>
+          <Name>Min Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1a47c252-3704-49c3-a2d3-56038fe73578">
+      <ID>Last Contact</ID>
+      <Name>Last Contact</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f47de010-7923-49e3-afcb-463082e70927">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5fdb0837-c995-450a-82d2-e147be477a62">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="480249f7-7e8c-4fd4-af99-82d2eecf6878">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ec07351-87c8-4020-b243-d85494c61f27">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>sec_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2582d8ba-96d1-479f-bc63-c9b1b20d5bce">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f842b63-7779-450a-81be-68e498abdf0b">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5eb5ec4a-a9cc-4c83-87d5-a9afb45e66b4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21d20585-21c2-4f63-971c-3f183ebf225a">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="aab66c2c-588a-43d5-94c6-6e2de4f3b898">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="666e18ed-c9c7-433e-a3a0-d9e900d3e5ab">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="18883e52-bee4-4dbd-a00c-af1793895b17">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23126cbf-5f42-4ef8-b9d6-27c261df38f3">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9aac2111-7063-4f8b-8250-d8e6913f47d5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44bbac99-3004-4db8-9c4d-a6ff66799688">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_last_contact</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3148f167-e88f-4f42-b85f-fecf5991072d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="518972f7-fafc-4ecc-b3ab-58158c6399ea">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>last_contact</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="431277b3-bfb9-49bd-9f04-5930301b82d2">
+          <AttributeID>Sec Last Contact</AttributeID>
+          <Name>Sec Last Contact</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd5c78a4-1536-419a-a079-8718273e93f4">
+      <ID>Time Position</ID>
+      <Name>Time Position</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c0ae98bd-bef3-42df-924c-d6d9e0511d47">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e50f0fbc-f8e3-4adb-965d-8cc6080dbdf3">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a41c98c5-3e4e-44bc-ab24-04fab1e69dd6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80181789-8e76-4358-8ce5-eef6b9eeb411">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>sec_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e236649e-8f80-47f4-9ff1-c02be0357624">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69e5178f-2843-4f53-a605-8f0bd866695f">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>min_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2c8331f5-615a-4bc6-a346-2c49de4701a9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="420c4c32-5461-47fe-8685-72659fb69ea7">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>hour_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="51fef085-186b-4e60-b16e-71405b479b5d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cf11206-554d-4bfa-9cc8-61d7332f956f">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>day_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bd48a4e0-9bf8-437e-ab9c-2e8610e70732">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc2b2a9b-686c-40c8-9541-771ca409e0a5">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>month_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3ead19fb-67f9-483e-a75c-befaedeed270">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1531d63-70fd-42c2-a1f3-96bfa9613eb2">
+            <TableID>dbo_dim_datetime</TableID>
+            <ColumnID>year_time_position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3df0ca52-1da2-4ebf-937d-253dfafbc9da">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f71b6ea1-1751-45ac-92d3-a6d5d528f34e">
+          <TableID>dbo_dim_datetime</TableID>
+          <ColumnID>time_position</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="454cb304-0314-41f7-9a56-4de089b96df6">
+          <AttributeID>Sec Time Position</AttributeID>
+          <Name>Sec Time Position</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="f7bdb212-96bf-472a-99fd-e119b13b11b4">
+      <ID>Hierarchy</ID>
+      <Name>Last_Contact</Name>
+      <Levels>
+        <Level dwd:design-time-name="370f33ba-a89c-43e8-933f-c6f5db008214">
+          <ID>Min Last Contact</ID>
+          <Name>Min Last Contact</Name>
+          <SourceAttributeID>Min Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0baa0cbb-9de1-44d5-b3bd-da83887ec052">
+          <ID>Month Last Contact</ID>
+          <Name>Month Last Contact</Name>
+          <SourceAttributeID>Month Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f61b574d-9f21-45a9-a2ef-7fe52ba9d265">
+          <ID>Day Last Contact</ID>
+          <Name>Day Last Contact</Name>
+          <SourceAttributeID>Day Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5b7bb7ba-e4a3-4d80-8703-1e499252e83e">
+          <ID>Last Contact</ID>
+          <Name>Last Contact</Name>
+          <SourceAttributeID>Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ee3311b9-6250-4f62-8b10-afe1e907e62a">
+          <ID>Year Last Contact</ID>
+          <Name>Year Last Contact</Name>
+          <SourceAttributeID>Year Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b805f370-9164-460a-91f5-98d659a7c20d">
+          <ID>Sec Last Contact</ID>
+          <Name>Sec Last Contact</Name>
+          <SourceAttributeID>Sec Last Contact</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="88fc25d0-cd2e-41bb-a3c4-abde94110304">
+          <ID>Hour Last Contact</ID>
+          <Name>Hour Last Contact</Name>
+          <SourceAttributeID>Hour Last Contact</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="e865205b-eb0f-4f7c-9e72-9373faddfc2b">
+      <ID>Hierarchy 1</ID>
+      <Name>Time_Position</Name>
+      <Levels>
+        <Level dwd:design-time-name="f06b711b-dc76-46d6-9d89-27e143f42c43">
+          <ID>Hour Time Position</ID>
+          <Name>Hour Time Position</Name>
+          <SourceAttributeID>Hour Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5b924f91-e18d-4a94-a06d-ea7fdcf14402">
+          <ID>Month Time Position</ID>
+          <Name>Month Time Position</Name>
+          <SourceAttributeID>Month Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f25b0fa0-8653-4289-b987-2d2a46dc66f7">
+          <ID>Min Time Position</ID>
+          <Name>Min Time Position</Name>
+          <SourceAttributeID>Min Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="86b9ad10-984d-4bbf-b090-9c7c2652e3d4">
+          <ID>Day Time Position</ID>
+          <Name>Day Time Position</Name>
+          <SourceAttributeID>Day Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f9ea3227-4494-4b28-ab6c-24117df1700a">
+          <ID>Sec Time Position</ID>
+          <Name>Sec Time Position</Name>
+          <SourceAttributeID>Sec Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0b10c927-45b2-43b3-8f8a-c231de4f5bcd">
+          <ID>Time Position</ID>
+          <Name>Time Position</Name>
+          <SourceAttributeID>Time Position</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f083cd26-b1f3-4f50-851a-25ce8764c6fe">
+          <ID>Year Time Position</ID>
+          <Name>Year Time Position</Name>
+          <SourceAttributeID>Year Time Position</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="35ed3541-7c28-4e33-9656-4ec90e53f6a7">
+      <ID>Hierarchy 2</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="501bd7a1-d143-4bfb-b464-443db96a7eec">
+          <ID>Hour Time Position</ID>
+          <Name>Hour Time Position</Name>
+          <SourceAttributeID>Hour Time Position</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

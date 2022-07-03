@@ -1,0 +1,158 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="068f3f00-b0a4-4077-bb9f-59dc17f212a9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Plane Index</ID>
+  <Name>Dim Plane Index</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2b8d3532-f306-48d9-be5e-99e4cd617c31">
+    <DataSourceViewID>Uf</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="1efb2285-c4e7-489d-8e42-59dbe9ebf290">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0bf8edbf-29fb-4638-a489-4fdacb97ad44">
+      <ID>Id Plane Index</ID>
+      <Name>Id Plane Index</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3078d33b-e3ca-4b38-aac0-f3af9e94900d">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="078be1f9-e9de-4d1a-9022-be2eae1e8407">
+            <TableID>dbo_dim_plane_index</TableID>
+            <ColumnID>id_plane_index</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="efd2c78a-00a0-460b-9c80-499238ae7bc0">
+          <AttributeID>Velocity</AttributeID>
+          <Name>Velocity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ca4f9475-9564-4238-a0e2-a640b44719a1">
+          <AttributeID>Heading</AttributeID>
+          <Name>Heading</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f174205b-ffb8-4cd0-87c7-c538026e3dd0">
+          <AttributeID>Vertical Rate</AttributeID>
+          <Name>Vertical Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8dde4ced-03c5-4c84-ac43-6446cd3bc14b">
+          <AttributeID>On Ground</AttributeID>
+          <Name>On Ground</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="82f54a1e-21af-48c6-a618-d9be3708af38">
+      <ID>Velocity</ID>
+      <Name>Velocity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="569776f2-e802-4a95-bfda-af5f349520a0">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="592462aa-7a33-4d7d-82b3-8cd1de05df6a">
+            <TableID>dbo_dim_plane_index</TableID>
+            <ColumnID>velocity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="308b41dc-cf55-491e-881b-604001ce04ec">
+      <ID>Heading</ID>
+      <Name>Heading</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="27dc2482-98fb-4c1b-9ce0-1727617d2449">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2cecc255-040a-49be-9a8b-7393f4fda4e1">
+            <TableID>dbo_dim_plane_index</TableID>
+            <ColumnID>heading</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d3e5f54-1ba2-4fb7-b003-2e4cbd68f2c8">
+      <ID>Vertical Rate</ID>
+      <Name>Vertical Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7cd313fa-1578-433f-80a8-80b5c5ee78b9">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a84041b5-9e52-487d-a580-465bc9f08b03">
+            <TableID>dbo_dim_plane_index</TableID>
+            <ColumnID>vertical_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e11c967b-3759-4a1a-bbaf-02e02881f15d">
+      <ID>On Ground</ID>
+      <Name>On Ground</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d132cc0-bc79-4c13-bb65-5de58c6e84e2">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebbc0805-7956-4aad-adf4-ed8839888c6f">
+            <TableID>dbo_dim_plane_index</TableID>
+            <ColumnID>on_ground</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
